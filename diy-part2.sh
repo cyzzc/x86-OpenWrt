@@ -21,7 +21,7 @@ sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz
 
 ########### 更改大雕源码（可选）###########
 sed -i 's/KERNEL_PATCHVER:=5.15/KERNEL_PATCHVER:=5.10/g' target/linux/x86/Makefile
-sed -i 's/KERNEL_TESTING_PATCHVER:=6.0/KERNEL_TESTING_PATCHVER:=5.10/g' target/linux/x86/Makefile
+sed -i 's/KERNEL_TESTING_PATCHVER:=6.1/KERNEL_TESTING_PATCHVER:=5.10/g' target/linux/x86/Makefile
 
 ########### 更新lean的内置的smartdns版本 ###########
 sed -i 's/1.2022.38/1.2022.39/g' feeds/packages/net/smartdns/Makefile
