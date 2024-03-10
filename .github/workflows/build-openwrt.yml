@@ -103,6 +103,11 @@ jobs:
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
 
+    - name: 删除重复依赖
+      run: |
+       cd openwrt
+       rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd-alt,miniupnpd-iptables,wireless-regdb}
+
     - name: Load custom configuration
       run: |
         [ -e files ] && mv files openwrt/files
