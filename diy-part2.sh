@@ -19,10 +19,6 @@ sed -i "s/hostname='.*'/hostname='SZZzc_1288'/g" package/base-files/files/bin/co
 ########### 设置密码为空（可选） ###########
 sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings
 
-########### 更改大雕源码（可选）###########
-sed -i 's/KERNEL_PATCHVER:=6.1/KERNEL_PATCHVER:=5.10/g' target/linux/x86/Makefile
-# sed -i 's/KERNEL_TESTING_PATCHVER:=5.4/KERNEL_TESTING_PATCHVER:=5.10/g' target/linux/x86/Makefile
-
 ########### 更新lean的内置的smartdns版本 ###########
 # sed -i 's/1.2022.38/1.2022.40/g' feeds/packages/net/smartdns/Makefile
 # sed -i 's/5a2559f0648198c290bb8839b9f6a0adab8ebcdc/d792e5f7f71ce9320b341fe02135077e00fa3e21/g' feeds/packages/net/smartdns/Makefile
